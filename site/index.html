@@ -8,19 +8,35 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- 🚧 STARTER SHELL — your team will reshape this. Software Developers own this file. -->
+  <!--
+    🚧 STARTER SHELL — your team will reshape this. Software Developers own this file.
+
+    ROLE PLAYBOOK (drop your file in contributions/<your-role>/, push, the Factory Agent wires it in):
+      • Software Developers ........ structure of this page, new sections, layout
+      • Visual Designers ........... hero illustration, section art, icons, portraits, palette
+      • Copywriters ................ headline, lede, body copy, microcopy on buttons
+      • Researcher ................. stats, real student quotes, trustworthy resource links
+      • Pitch Lead ................. final CTA copy, Sign-up flow words, the closing line
+      • Accessibility Champion ..... alt text, focus states, contrast, "Built with care" note
+      • Project Coordinator ........ team roll-call, project tagline, what the team is proud of
+  -->
 
   <header class="site-header">
     <a class="brand" href="#">FirstGen</a>
     <nav>
       <a href="#what">What is it?</a>
+      <a href="#numbers">Numbers</a>
       <a href="#who">Who's it for?</a>
+      <a href="#voices">Voices</a>
       <a href="#how">How it helps</a>
+      <a href="#buddy">Meet a buddy</a>
       <a href="#join" class="cta-link">Join</a>
     </nav>
   </header>
 
   <main>
+
+    <!-- ROLE: Visual Designer 1 (hero image), Copywriter 1 (headline + lede), Pitch Lead (CTA copy) -->
     <section class="hero">
       <div class="hero-text">
         <h1>University, for people like us.</h1>
@@ -30,22 +46,64 @@
         <a class="cta" href="#join">Find your buddy →</a>
       </div>
       <div class="hero-image">
-        <!-- Visual Designers: drop a hero image here -->
-        <img src="../contributions/visual-designer-1/hero.png" alt="" onerror="this.style.display='none'"/>
+        <img src="../contributions/visual-designer-1/hero.png" alt="" onerror="this.style.display='none'" />
       </div>
     </section>
 
+    <!-- ROLE: Researcher (replace stat numbers + sources), Visual Designer 2 (optional icon per stat) -->
+    <section id="numbers" class="numbers-section">
+      <h2>By the numbers</h2>
+      <p class="section-lede">Researchers: replace these with real figures and add a source link under each.</p>
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-figure">1 in 5</div>
+          <div class="stat-label">UK undergrads are the first in their family to go to uni.</div>
+          <div class="stat-source">Source: add link</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-figure">~30%</div>
+          <div class="stat-label">More likely to drop out in year one without a support network.</div>
+          <div class="stat-source">Source: add link</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-figure">2x</div>
+          <div class="stat-label">Outcomes improve when matched with a peer mentor from a similar background.</div>
+          <div class="stat-source">Source: add link</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROLE: Copywriter 1 (replace this paragraph with the team's voice) -->
     <section id="what" class="content-section">
       <h2>What FirstGen is</h2>
-      <!-- Copywriters: replace this paragraph -->
       <p>A short paragraph from the Copywriting team about what FirstGen is.</p>
     </section>
 
+    <!-- ROLE: Copywriter 2 (the audience paragraph) -->
     <section id="who" class="content-section alt">
       <h2>Who it's for</h2>
       <p>A short paragraph from the Copywriting team about the audience.</p>
     </section>
 
+    <!-- ROLE: Researcher (real quotes), Visual Designer 2 (portrait/illustration per voice) -->
+    <section id="voices" class="voices-section">
+      <h2>Voices</h2>
+      <p class="section-lede">Researchers: drop in real quotes from FirstGen students. Designers: optional portraits.</p>
+      <div class="voice-grid">
+        <figure class="voice-card">
+          <img src="../contributions/visual-designer-2/voice-1.png" alt="" onerror="this.style.display='none'" />
+          <blockquote>"Add a real quote from a first-gen student."</blockquote>
+          <figcaption>Name, course, university</figcaption>
+        </figure>
+        <figure class="voice-card">
+          <img src="../contributions/visual-designer-2/voice-2.png" alt="" onerror="this.style.display='none'" />
+          <blockquote>"Another real quote — money, anxiety, asking for help."</blockquote>
+          <figcaption>Name, course, university</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ROLE: Copywriter 2 (the three "how it helps" lines), Visual Designer 2 (optional small icon per item) -->
     <section id="how" class="content-section">
       <h2>How it helps</h2>
       <ul class="feature-list">
@@ -55,11 +113,57 @@
       </ul>
     </section>
 
+    <!-- ROLE: Copywriter 2 (buddy bio), Visual Designer 2 (buddy portrait) -->
+    <section id="buddy" class="buddy-section">
+      <h2>Meet a buddy</h2>
+      <div class="buddy-card">
+        <img class="buddy-photo" src="../contributions/visual-designer-2/buddy.png" alt="" onerror="this.style.display='none'" />
+        <div class="buddy-bio">
+          <h3>Sample buddy name</h3>
+          <p class="buddy-meta">Course • Year • University</p>
+          <p>One short paragraph in the buddy's own voice — what they wish they'd known, what they help with. Copywriter 2 owns this.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROLE: Researcher (replace with real, trustworthy links — Sutton Trust, UCAS, Money Saving Expert, etc.) -->
+    <section id="resources" class="content-section alt">
+      <h2>Resources we trust</h2>
+      <ul class="resource-list">
+        <li><a href="#">Add a real link</a> — what it covers in one line.</li>
+        <li><a href="#">Add a real link</a> — what it covers in one line.</li>
+        <li><a href="#">Add a real link</a> — what it covers in one line.</li>
+      </ul>
+    </section>
+
+    <!-- ROLE: Pitch Lead (the closing call to action) -->
     <section id="join" class="cta-section">
       <h2>Ready when you are.</h2>
       <p>The Pitch Lead writes the final call to action.</p>
       <a class="cta" href="#">Sign up →</a>
     </section>
+
+    <!-- ROLE: Accessibility Champion (the team's promise about access) -->
+    <section id="access" class="access-section">
+      <h2>Built with care</h2>
+      <p>Accessibility Champion: a short note about how this site treats everyone — alt text, contrast, keyboard, plain language.</p>
+    </section>
+
+    <!-- ROLE: Project Coordinator (team roll-call + tagline) -->
+    <section id="team" class="team-section">
+      <h2>Built by</h2>
+      <p class="section-lede">Coordinator: replace with your team's tagline + roll-call.</p>
+      <ul class="team-list">
+        <li>Project Coordinator — name</li>
+        <li>Software Developers — names</li>
+        <li>Visual Designers — names</li>
+        <li>Copywriters — names</li>
+        <li>Researcher — name</li>
+        <li>Pitch Lead — name</li>
+        <li>Accessibility Champion — name</li>
+      </ul>
+    </section>
+
   </main>
 
   <footer>

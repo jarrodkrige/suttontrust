@@ -145,3 +145,146 @@ footer {
   font-size: 0.875rem;
   color: #888;
 }
+
+/* ============================================================
+   Section additions — placeholders for every role.
+   Steward: tighten or replace as the team's design lands.
+   ============================================================ */
+
+.section-lede {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: var(--gap-l);
+}
+
+/* By the numbers (Researcher) */
+.numbers-section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--gap-xl) var(--gap-l);
+}
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--gap-m);
+}
+.stat-card {
+  background: var(--colour-paper);
+  border: 1px solid var(--colour-quiet);
+  border-radius: var(--radius);
+  padding: var(--gap-m);
+}
+.stat-figure {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--colour-trust);
+  line-height: 1;
+  margin-bottom: var(--gap-s);
+}
+.stat-label { font-size: 1rem; margin-bottom: var(--gap-s); }
+.stat-source { font-size: 0.8125rem; color: #888; }
+
+/* Voices (Researcher + Designer 2) */
+.voices-section {
+  background: var(--colour-quiet);
+  padding: var(--gap-xl) calc((100vw - var(--max-width)) / 2 + var(--gap-l));
+}
+.voice-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--gap-m);
+}
+.voice-card {
+  background: var(--colour-paper);
+  border-radius: var(--radius);
+  padding: var(--gap-m);
+  margin: 0;
+}
+.voice-card img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: var(--gap-s);
+}
+.voice-card blockquote {
+  margin: 0 0 var(--gap-s);
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  line-height: 1.4;
+}
+.voice-card figcaption { font-size: 0.875rem; color: #666; }
+
+/* Meet a buddy (Copywriter 2 + Designer 2) */
+.buddy-section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--gap-xl) var(--gap-l);
+}
+.buddy-card {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: var(--gap-l);
+  align-items: center;
+  background: var(--colour-paper);
+  border: 1px solid var(--colour-quiet);
+  border-radius: var(--radius);
+  padding: var(--gap-l);
+}
+@media (max-width: 600px) {
+  .buddy-card { grid-template-columns: 1fr; }
+}
+.buddy-photo {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.buddy-bio h3 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+.buddy-meta { color: #666; margin-bottom: var(--gap-s); font-size: 0.9375rem; }
+
+/* Resources (Researcher) */
+.resource-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: var(--gap-s);
+}
+.resource-list li {
+  background: var(--colour-paper);
+  border: 1px solid var(--colour-quiet);
+  border-radius: var(--radius);
+  padding: var(--gap-m);
+}
+
+/* Built with care (A11y) */
+.access-section {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--gap-xl) var(--gap-l);
+  text-align: center;
+}
+
+/* Built by (Coordinator) */
+.team-section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--gap-xl) var(--gap-l);
+  text-align: center;
+}
+.team-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--gap-s);
+  text-align: left;
+}
+.team-list li {
+  background: var(--colour-paper);
+  border: 1px solid var(--colour-quiet);
+  border-radius: var(--radius);
+  padding: var(--gap-s) var(--gap-m);
+  font-size: 0.9375rem;
+}
