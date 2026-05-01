@@ -1,0 +1,147 @@
+/* ============================================================
+   FirstGen — shared stylesheet
+   The Software Developer designated as "stylesheet steward" owns this file.
+   Everyone else: don't touch directly. Ask the steward.
+   This is a STARTER. Replace tokens, palette, type with what your team decides.
+   ============================================================ */
+
+:root {
+  /* Colour tokens — replace with your team's palette */
+  --colour-ink: #1a1a2e;
+  --colour-paper: #fdfcfb;
+  --colour-warm: #f4a261;
+  --colour-trust: #2a9d8f;
+  --colour-quiet: #e9ecef;
+
+  /* Type tokens */
+  --font-display: "Georgia", "Times New Roman", serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  /* Spacing */
+  --gap-s: 0.75rem;
+  --gap-m: 1.5rem;
+  --gap-l: 3rem;
+  --gap-xl: 6rem;
+
+  /* Layout */
+  --max-width: 1100px;
+  --radius: 12px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  color: var(--colour-ink);
+  background: var(--colour-paper);
+  line-height: 1.55;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0 0 var(--gap-m);
+}
+
+h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
+h2 { font-size: clamp(1.75rem, 3vw, 2.5rem); }
+p  { margin: 0 0 var(--gap-m); font-size: 1.0625rem; }
+
+a { color: var(--colour-trust); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--gap-m) var(--gap-l);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+.brand {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--colour-ink);
+}
+.site-header nav a { margin-left: var(--gap-m); color: var(--colour-ink); }
+.cta-link {
+  background: var(--colour-ink);
+  color: var(--colour-paper) !important;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+}
+
+/* Hero */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap-l);
+  align-items: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--gap-xl) var(--gap-l);
+}
+@media (max-width: 768px) {
+  .hero { grid-template-columns: 1fr; padding: var(--gap-l); }
+}
+.lede { font-size: 1.25rem; color: #555; }
+.hero-image img {
+  width: 100%;
+  border-radius: var(--radius);
+  display: block;
+}
+
+/* CTA */
+.cta {
+  display: inline-block;
+  background: var(--colour-warm);
+  color: var(--colour-ink);
+  padding: 0.875rem 1.5rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 1.0625rem;
+}
+.cta:hover { background: #e08d44; text-decoration: none; }
+
+/* Content sections */
+.content-section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--gap-xl) var(--gap-l);
+}
+.content-section.alt { background: var(--colour-quiet); max-width: none; padding: var(--gap-xl) calc((100vw - var(--max-width)) / 2 + var(--gap-l)); }
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--gap-m);
+}
+.feature-list li {
+  background: var(--colour-paper);
+  border: 1px solid var(--colour-quiet);
+  padding: var(--gap-m);
+  border-radius: var(--radius);
+}
+
+/* CTA section */
+.cta-section {
+  text-align: center;
+  padding: var(--gap-xl) var(--gap-l);
+  background: var(--colour-ink);
+  color: var(--colour-paper);
+}
+.cta-section a { color: var(--colour-paper); }
+
+footer {
+  text-align: center;
+  padding: var(--gap-m);
+  font-size: 0.875rem;
+  color: #888;
+}
