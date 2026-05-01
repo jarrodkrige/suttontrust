@@ -1,5 +1,7 @@
 # 🚀 FirstGen — Sutton Trust × Microsoft Workplace Safari, 8 May 2026
 
+![FirstGen banner](banner.png)
+
 Welcome! You're part of the team building **FirstGen** — a marketing microsite for a (fictional) social enterprise that helps first-generation university students.
 
 > **You have ~40 minutes. Don't panic. AI is doing the heavy lifting — your job is to direct it.**
