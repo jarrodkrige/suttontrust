@@ -12,6 +12,9 @@
   --colour-warm: #f4a261;
   --colour-trust: #2a9d8f;
   --colour-quiet: #e9ecef;
+  --colour-secondary: #555;
+  --colour-muted: #888;
+  --colour-warm-hover: #e08d44;
 
   /* Type tokens */
   --font-display: "Georgia", "Times New Roman", serif;
@@ -89,7 +92,7 @@ a:hover { text-decoration: underline; }
 @media (max-width: 768px) {
   .hero { grid-template-columns: 1fr; padding: var(--gap-l); }
 }
-.lede { font-size: 1.25rem; color: #555; }
+.lede { font-size: 1.25rem; color: var(--colour-secondary); }
 .hero-image img {
   width: 100%;
   border-radius: var(--radius);
@@ -106,7 +109,7 @@ a:hover { text-decoration: underline; }
   font-weight: 600;
   font-size: 1.0625rem;
 }
-.cta:hover { background: #e08d44; text-decoration: none; }
+.cta:hover { background: var(--colour-warm-hover); text-decoration: none; }
 
 /* Content sections */
 .content-section {
@@ -143,7 +146,7 @@ footer {
   text-align: center;
   padding: var(--gap-m);
   font-size: 0.875rem;
-  color: #888;
+  color: var(--colour-muted);
 }
 
 /* ============================================================
@@ -152,7 +155,7 @@ footer {
    ============================================================ */
 
 .section-lede {
-  color: #666;
+  color: var(--colour-secondary);
   font-size: 1rem;
   margin-bottom: var(--gap-l);
 }
@@ -183,7 +186,7 @@ footer {
   margin-bottom: var(--gap-s);
 }
 .stat-label { font-size: 1rem; margin-bottom: var(--gap-s); }
-.stat-source { font-size: 0.8125rem; color: #888; }
+.stat-source { font-size: 0.8125rem; color: var(--colour-muted); }
 
 /* Voices (Researcher + Designer 2) */
 .voices-section {
@@ -214,7 +217,7 @@ footer {
   font-size: 1.125rem;
   line-height: 1.4;
 }
-.voice-card figcaption { font-size: 0.875rem; color: #666; }
+.voice-card figcaption { font-size: 0.875rem; color: var(--colour-secondary); }
 
 /* Meet a buddy (Copywriter 2 + Designer 2) */
 .buddy-section {
@@ -242,7 +245,7 @@ footer {
   object-fit: cover;
 }
 .buddy-bio h3 { font-size: 1.5rem; margin-bottom: 0.25rem; }
-.buddy-meta { color: #666; margin-bottom: var(--gap-s); font-size: 0.9375rem; }
+.buddy-meta { color: var(--colour-secondary); margin-bottom: var(--gap-s); font-size: 0.9375rem; }
 
 /* Resources (Researcher) */
 .resource-list {
