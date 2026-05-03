@@ -10,8 +10,22 @@ This is on purpose. It mirrors how senior developers actually work in an AI-nati
 - `component-snippets/` — HTML/CSS snippets you've prototyped that the Agent can lift
 - `refactor-requests.md` — "the hero feels cramped, suggest the Agent widens it"
 
+## What this turns into on the live site
+
+Your job is to direct the Factory Agent to **reshape the SHELL** — the page structure, the styling system, and the components. The agent reads what you commit and updates `site/index.html` and `site/styles.css`. Concretely:
+
+| You commit … | The agent does … |
+| --- | --- |
+| `palette.md` with hex codes | updates the CSS variables at the top of `site/styles.css` (page colours, type, spacing change in seconds) |
+| `layout-ideas.md` describing hero proportions or grid | rewrites the relevant `<section>` markup to match (mobile-first, text/image ratio, etc.) |
+| A snippet in `component-snippets/` | lifts the snippet into the page where it fits |
+| `refactor-requests.md` saying "the team has 5 stat cards but the template only has 3 slots" | **adds slots** — the agent can grow the grid because you authorized it |
+
+**You unlock the template's flexibility.** The starter `site/index.html` has a default shape; your proposals are how it bends. When a copywriter writes more body sections than the template has slots for, your refactor request says "make room." When a section has no contributor by ship-it, your request says "drop it." The structure-authority contract is in the `<!-- META: STRUCTURE AUTHORITY -->` block at the top of `<main>` in `site/index.html` — read it once.
+
 ## Coordinate with
 - **Software Developer 2** — you take the *visual system* (palette, type, spacing). They take *page composition*.
+- **Software Developers 3 & 4** (if present) — they own polish and wildcards; coordinate so you don't trip over each other
 - **Visual Designer 1** — palette agreement
 - **Project Coordinator** — for direction
 - **Accessibility Champion** — they'll review your contrast choices

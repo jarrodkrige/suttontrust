@@ -9,7 +9,8 @@ You write the words on the site. Warm, clear, trustworthy — for 16-18 year-old
 - Any draft body copy
 
 ## Coordinate with
-- **Copywriter 2** — keep the voice consistent across the site
+- **Copywriter 2** — they own the body sections (who/how/buddy); keep voices aligned
+- **Copywriters 3–5** (if present) — they polish and pitch alternative drafts; read theirs before defending yours
 - **Software Developers** — they consume your text
 - **Accessibility Champion** — they review for clarity, plain language
 

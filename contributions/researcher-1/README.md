@@ -1,14 +1,16 @@
-# 🔎 Researcher
+# 🔎 Researcher 1
 
-You find real-world evidence and context for the team. Statistics, quotes, examples of similar initiatives. Your output gives the Copywriters credibility.
+You're the lead researcher. You find real-world evidence and context for the team — statistics, sources, and the trust-layer that gives the Copywriters credibility. Researcher 2 (your partner) owns the human story (real quotes, anecdotes).
+
+Agree the split with Researcher 2 in minute 5. Default: you own stats + sources, they own quotes + personas.
 
 ## What lives in this folder
 - `stats.md` — statistics about first-generation UK university students, with sources
-- `quotes.md` — quotes from real people, with sources
 - `similar-initiatives.md` — UK charities and programmes already in this space
 - `sources.md` — every URL you used, so the Product Owner can verify
 
 ## Coordinate with
+- **Researcher 2** (if present) — they own quotes and personas; agree the split in minute 5
 - **Copywriters** — they consume your evidence
 - **Pitch Lead** — they may use a stat in the opener
 - **Product Owner** (Jarrod) — they validate whether a source is solid enough to use

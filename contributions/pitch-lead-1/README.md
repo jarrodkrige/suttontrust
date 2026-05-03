@@ -1,6 +1,6 @@
-# 🎤 Pitch Lead
+# 🎤 Pitch Lead 1
 
-You write the team's elevator pitch. **At minute 50, you stand up and present it live, with the FirstGen site rendered on the screen behind you.** That's your moment.
+You're the lead Pitch Lead. **At minute 50, one of you stands up and presents the team's pitch live, with the FirstGen site rendered on the screen behind you.** Agree with Pitch Lead 2 in minute 5 who's presenting — you, them, or you co-present. (Co-presenting works for some teams; a single voice is usually punchier.) That's your moment.
 
 ## What lives in this folder
 - `pitch.md` — the final pitch (read it aloud, time yourself — aim 60-90 seconds)
@@ -16,9 +16,10 @@ You write the team's elevator pitch. **At minute 50, you stand up and present it
 - **Minute 50-53** — stand. Present. Site is live behind you.
 
 ## Coordinate with
+- **Pitch Lead 2** (if present) — your writing partner and rehearsal coach; the closest working relationship for this hour
 - **Project Coordinator** — they'll tell you when the team is ready
 - **Copywriters** — borrow their best lines
-- **Researcher** — open with a stat *only* if it's verified and punchy
+- **Researchers 1 & 2** — open with a stat *only* if it's verified and punchy
 - **Everyone** — your pitch synthesises everyone's work
 
 ## First 2 minutes

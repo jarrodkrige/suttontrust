@@ -9,6 +9,7 @@ You produce the imagery. Hero images, illustrations, icons. You'll mostly use **
 
 ## Coordinate with
 - **Visual Designer 2** — agree style/mood in minute 3 so the site feels coherent
+- **Visual Designers 3 & 4** (if present) — they make supporting visuals and the closing image; share your palette early so theirs match
 - **Software Developer 1** (stylesheet steward) — palette + typography decisions
 - **Copywriters** — your imagery should match the tone they're setting
 - **Accessibility Champion** — they'll check your images have alt text and good contrast

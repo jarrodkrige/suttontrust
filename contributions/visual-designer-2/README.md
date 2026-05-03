@@ -10,6 +10,7 @@ You partner with Visual Designer 1. Split the work — they take the hero, you t
 
 ## Coordinate with
 - **Visual Designer 1** — agree style/mood in minute 3
+- **Visual Designers 3 & 4** (if present) — they own dividers/backgrounds and the closing image; coordinate the palette
 - **Software Developer 1** (stylesheet steward) — they style around your imagery
 - **Copywriters** — your imagery should match their tone
 
