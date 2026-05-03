@@ -1,0 +1,22 @@
+/* SWD-1 — Promote Visual Designer 1's palette to CSS custom properties.
+   Drop these into site/styles.css under :root, replacing any matching tokens.
+   Keep the existing semantic naming (--colour-paper etc.) so nothing else breaks. */
+
+:root {
+  --colour-ink:    #1A1A2E;
+  --colour-paper:  #FDFCFB;
+  --colour-warm:   #F4A261;
+  --colour-trust:  #2A9D8F;
+  --colour-coral:  #E76F51;
+}
+
+/* Headings get the editorial display face; body stays Inter for readability. */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display, "Fraunces", Georgia, serif);
+  color: var(--colour-ink);
+}
+
+/* CTA hover — slightly darker warm so it doesn't fade against paper. */
+.cta:hover {
+  background: #DD8E48;
+}
